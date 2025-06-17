@@ -1,0 +1,11 @@
+.headline{
+      font-family: "Cal Sans", sans-serif;
+      font-size: 50px;
+}
+
+.bio{
+    max-width: 40%;
+    text-align: justify;
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+}
