@@ -8,7 +8,7 @@ function Navbar() {
         <Link to="/" className="logo-link">Abdullah.</Link>
       </div>
       <ul className="navbar-menu">
-        <li><Link to="/about">About</Link></li>
+        <li><Link to="/about">Skills</Link></li>
         <li><Link to="/projects">Projects</Link></li>
         <li><Link to="/contact">Contact</Link></li>
         <li><Link to="/Socials">Socials</Link></li>

@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  background-color: #1E293B;
 }
 
 .navbar-logo {
@@ -11,15 +12,17 @@
 
 .logo-link {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 40px;
   font-family: "Cal Sans", sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
 }
 
-.logo-link:hover{
-    text-decoration: none;
-    color:azure;
+.logo-link:hover {
+  text-decoration: none;
+  color: rgb(174, 224, 249);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
 }
 
 .navbar-menu {
@@ -32,12 +35,14 @@
 
 .navbar-menu a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-family: 'Quicksand', sans-serif;
   font-size: large;
+  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.4);
 }
 
 .navbar-menu a:hover {
     text-decoration:dotted;
     font-weight: 1000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
