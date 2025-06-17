@@ -1,6 +1,6 @@
 /* Section container with reduced top padding */
 .intro-section {
-  padding: 20px 40px;
+  padding: 10px 40px;
   margin-top: 0; /* In case default margins apply */
 }
 
@@ -12,7 +12,7 @@
   color: black;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 1px; /* Reduced bottom spacing */
+  margin-bottom: 0px; /* Reduced bottom spacing */
   font-weight: 100;
 }
 
