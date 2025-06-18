@@ -1,63 +1,88 @@
-/* Section container with reduced top padding */
 .intro-section {
   padding: 10px 40px;
-  margin-top: 0; /* In case default margins apply */
+  margin-top: 0;
+  text-align: center;
 }
 
-/* Headline centered and styled */
 .headline {
   font-family: "Cal Sans", sans-serif;
-  font-size: 30px; /* slightly smaller if needed */
+  font-size: 30px;
   text-shadow: 1px 1px 1px rgb(255, 255, 255);
   color: black;
-  text-align: center;
   margin-top: 0;
-  margin-bottom: 0px; /* Reduced bottom spacing */
+  margin-bottom: -10px;
   font-weight: 100;
 }
 
-.subheading{
-    text-align: center;
-    font-size: 40px;
-    margin-top: 0;
-    color: black;
-    font-family: "Cal Sans", sans-serif;
-    text-shadow: 1px 1px 1px rgb(255, 255, 255);
-
+.subheading {
+  font-family: "Cal Sans", sans-serif;
+  font-size: 50px;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+  color: black;
+  margin-top: 0;
 }
 
-/* Flex layout for bio + image */
 .intro-content {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 30px;
+  gap: 50px;
   flex-wrap: wrap;
+  margin-top: -15px;
 }
 
 .bio {
   max-width: 800px;
   text-align: justify;
   font-family: 'Quicksand', sans-serif;
-  font-size: 17px;
+  font-size: 15px;
   color: rgba(15, 1, 48, 0.829);
-   margin: 40px; 
+  margin: 0;
+  background-color: beige;
+  padding: 50px;
+  padding-bottom: 42px;
+  border-radius: 25px;
 }
 
+.bio:hover {
+  background-color: bisque;
+}
 
-.ppm {
+.ppm-container {
+  position: relative;
   flex: 1;
   max-width: 300px;
   width: 100%;
-  height: 50%;
-  border-radius: 52px;
-  margin-right: 70px;
-  margin-top: 40px;
-  border:2px solid rgb(250, 250, 252);
 }
 
-.ppm:hover{
-    opacity: 80%;
+.ppm {
+  width: 100%;
+  border-radius: 52px;
+  border: 2px solid rgb(250, 250, 252);
+}
+
+.ppm:hover {
+  opacity: 0.8;
+}
+
+.ppm-button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1E293B;
+  color: rgb(208, 255, 0);
+  padding: 8px 16px 8px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.ppm-container:hover .ppm-button {
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
@@ -65,11 +90,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 0;
   }
 
   .bio {
     max-width: 90%;
-    text-align: justify;
     margin-top: 10px;
   }
 
@@ -77,5 +102,4 @@
     max-width: 70%;
     margin-top: 20px;
   }
-
 }
