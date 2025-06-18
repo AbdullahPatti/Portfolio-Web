@@ -1,45 +1,74 @@
-.abouts{
-    background-color: aquamarine;
+.abouts {
+  background: linear-gradient(to right, #d9f8f3, #bdf4ec);
+  padding: 60px 20px;
+  min-height: 100vh;
 }
-.skillset{
-    font-family: "Cal Sans", sans-serif;
-  font-size: 50px;
-  text-shadow: 1px 1px 5px rgb(255, 255, 255);
-  color: black;
-  margin-top: 20px;
-  padding-top: 85px;
+
+.skillset {
+  font-family: "Cal Sans", sans-serif;
+  font-size: 48px;
+  color: #003049;
   text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
 }
 
-.skillsOutline{
-    color: teal;
-    margin: 10px;
-    margin-top: -20px;
-    padding: 5px;
-    text-align: justify;
-    font-family: 'Quicksand', sans-serif;
+.skillsOutline {
+  max-width: 1900px;
+  margin: 0 auto;
+  color: #004e5b;
+  font-size: 17px;
+  line-height: 1.7;
+  padding: 10px 20px;
+  text-align: justify;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #eafff5;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.head{
-    text-align: center;
-     font-family: "Cal Sans", sans-serif;
-  font-size: 25px;
-  color: rgb(0, 58, 82);
-  margin-top: -5px;
+.head {
+  display: inline-block;
+  padding: 8px 20px;
+  text-align: center;
+  font-family: "Cal Sans", sans-serif;
+  font-size: 24px;
+  color: #003049;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  background-color: #eafff5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-.head1{
-    margin-top: -35px;
+
+.tedec {
+  font-family: 'Quicksand', sans-serif;
+  list-style-type: square;
+  color: #026873;
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  padding-left: 30px;
+  line-height: 1.6;
 }
 
-.headx{
-    margin-top: -10px;
-}
+@media (max-width: 768px) {
+  .skillsOutline {
+    font-size: 16px;
+    padding: 15px;
+  }
 
-.tedec{
-   font-family: 'Quicksand', sans-serif;
-   list-style-type: square;
-   color: teal;
-   font-size: 20px;
-   margin-top: -45px;
+  .tedec {
+    font-size: 17px;
+    padding-left: 20px;
+  }
+
+  .skillset {
+    font-size: 40px;
+  }
+
+  .head {
+    font-size: 22px;
+  }
 }

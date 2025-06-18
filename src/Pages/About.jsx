@@ -14,28 +14,22 @@ function About() {
         <li>C++</li>
       </ul>
 
-      <br />
-
-      <h1 className="head head1">Web Development</h1>
+      <h1 className="head">Web Development</h1>
       <ul className="tedec">
         <li>HTML5</li>
         <li>CSS</li>
         <li>React JS</li>
       </ul>
 
-      <h1 className="head headx">Database</h1>
+      <h1 className="head">Database</h1>
       <ul className="tedec">
         <li>MySQL</li>
       </ul>
-
-      <br />
 
       <h1 className="head">Version Control</h1>
       <ul className="tedec">
         <li>Git & GitHub</li>
       </ul>
-
-      <br />
 
       <h1 className="head">Tools & Platforms</h1>
       <ul className="tedec">
@@ -52,8 +46,6 @@ function About() {
         <li>Public Speaking</li>
         <li>Photography</li>
       </ul>
-
-      <br />
     </section>
   );
 }
