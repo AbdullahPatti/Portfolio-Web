@@ -1,0 +1,87 @@
+.project_heading {
+  padding: 8px 20px;
+  text-align: center;
+  font-family: "Cal Sans", sans-serif;
+  font-size: 40px;
+  color: #003049;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paragraph {
+  padding: 20px;
+  margin: 20px;
+  font-family: 'Quicksand', sans-serif;
+  background-color: whitesmoke;
+  border-radius: 25px;
+}
+
+.main_projects {
+  font-family: "Cal Sans", sans-serif;
+  font-size: 40px;
+  color: #003049;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 1px;
+  padding: 8px 20px;
+}
+
+.explanation{
+    background-color: #003049;
+    border-radius: 50px;
+    margin: auto;
+    max-width: 750px;
+}
+
+.tedecs{
+    color: whitesmoke;
+    text-align: center;
+    list-style-type: square;
+    list-style-position:outside;
+}
+
+.id1{
+font-size: large;
+font-weight: bold;
+list-style-type: none;
+align-items: center;
+justify-content: center;
+}
+
+.ids{
+margin-top: 10px;
+padding-top: 20px;
+}
+
+.id2{
+list-style-type: none;
+}
+
+/* .certify{
+    align-items: center;
+    justify-items: center;
+    align-items: center;
+} */
+
+.certify_exp{
+     align-items: center;
+    justify-items: center;
+}
+
+.cid1{
+font-size: large;
+font-weight: bold;
+list-style-type: none;
+align-items: center;
+justify-content: center;
+}
+
+.cid2{
+list-style-type: none;
+}

@@ -22,7 +22,7 @@
   padding: 10px 20px;
   text-align: justify;
   font-family: 'Quicksand', sans-serif;
-  background-color: #eafff5;
+  background-color: whitesmoke;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
@@ -37,7 +37,7 @@
   margin-top: 50px;
   margin-bottom: 10px;
   border-radius: 15px;
-  background-color: #eafff5;
+  background-color: aliceblue;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 

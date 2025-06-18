@@ -36,16 +36,20 @@
   text-align: justify;
   font-family: 'Quicksand', sans-serif;
   font-size: 15px;
-  color: teal;
+  color: rgb(0, 0, 0);
   margin: 0;
-  background-color:azure;
+  background-color:whitesmoke;
   padding: 50px;
   padding-bottom: 42px;
   border-radius: 25px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
 }
 
 .bio:hover {
-  background-color: bisque;
+  /* background-color: bisque; */
+  transition: opacity 0.3s ease;
+  opacity: 1;
 }
 
 .ppm-container {
@@ -58,11 +62,7 @@
 .ppm {
   width: 100%;
   border-radius: 52px;
-  border: 2px solid rgb(250, 250, 252);
-}
-
-.ppm:hover {
-  opacity: 0.8;
+  border: 2px solid whitesmoke;
 }
 
 .ppm-button {

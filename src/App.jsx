@@ -22,6 +22,7 @@ function App() {
         </Routes>
       </main>
       <About />
+      <Projects />
       <Footer />
     </Router>
   );
