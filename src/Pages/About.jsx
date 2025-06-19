@@ -13,6 +13,7 @@ function About() {
         <ul className="tedec">
           <li>C</li>
           <li>C++</li>
+          <li>Assembly Language</li>
         </ul>
 
         <h1 className="head">Web Development</h1>
