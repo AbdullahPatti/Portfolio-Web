@@ -1,7 +1,9 @@
+import './Footer.css'
+
 function Footer() {
   return (
-    <footer style={{ textAlign: 'center', padding: '1rem', marginTop: '2rem', backgroundColor: '#eee' }}>
-      <p>&copy; 2025 Abdullah Haroon. All rights reserved.</p>
+    <footer className="footer">
+      <p className="footer-note">Scroll ends here, but your story doesn’t.</p>
     </footer>
   );
 }

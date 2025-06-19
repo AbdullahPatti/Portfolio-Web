@@ -2,6 +2,7 @@
   padding: 10px 40px;
   margin-top: 0;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 .headline {
@@ -38,29 +39,34 @@
   font-size: 15px;
   color: rgb(0, 0, 0);
   margin: 0;
-  background-color:whitesmoke;
-  padding: 50px;
-  padding-bottom: 42px;
+  background-color: whitesmoke;
+  padding: 55px;
+  padding-bottom: 47px;
   border-radius: 25px;
   opacity: 0.8;
   transition: opacity 0.3s ease;
 }
 
 .bio:hover {
-  /* background-color: bisque; */
-  transition: opacity 0.3s ease;
   opacity: 1;
 }
 
 .ppm-container {
-  position: relative;
   flex: 1;
   max-width: 300px;
+  width: 100%;
+  text-align: center;
+}
+
+.ppm-image-wrapper {
+  position: relative;
   width: 100%;
 }
 
 .ppm {
   width: 100%;
+  max-height: 360px;
+  object-fit: cover;
   border-radius: 52px;
   border: 2px solid whitesmoke;
 }
@@ -72,7 +78,7 @@
   transform: translateX(-50%);
   background-color: #1E293B;
   color: rgb(208, 255, 0);
-  padding: 8px 16px 8px 16px;
+  padding: 8px 16px;
   border-radius: 10px;
   text-decoration: none;
   font-family: 'Quicksand', sans-serif;
@@ -81,8 +87,26 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.ppm-container:hover .ppm-button {
+.ppm-image-wrapper:hover .ppm-button {
   opacity: 1;
+}
+
+.cv-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 18px 10px 20px;
+  background-color: #013240;
+  color: white;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.cv-button:hover {
+  background-color: #000000;
 }
 
 @media (max-width: 768px) {
