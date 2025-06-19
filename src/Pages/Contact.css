@@ -1,7 +1,6 @@
 .contact {
   background-color: rgb(254, 226, 245);
-  padding: 60px 20px;
-  padding-bottom: 50px;
+  padding: 60px 20px 50px 20px;
 }
 
 .contact_header {
@@ -22,6 +21,7 @@
   text-align: center;
   font-size: 18px;
   line-height: 1.6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .email {
@@ -36,7 +36,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0; /* reduced from 10px 0 to 0 */
   margin-bottom: 10px;
 }
 
@@ -49,5 +48,51 @@
   border: 2px solid #ccc;
   border-radius: 10px;
   font-size: 17px;
-  margin: 0; /* Remove extra spacing */
+  margin: 0;
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 768px) {
+  .contact_header {
+    font-size: 32px;
+  }
+
+  .lines {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .email {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .etype {
+    font-size: 16px;
+    padding: 6px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 40px 15px 40px 15px;
+  }
+
+  .contact_header {
+    font-size: 28px;
+  }
+
+  .lines {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .email {
+    font-size: 20px;
+  }
+
+  .etype {
+    font-size: 15px;
+    padding: 6px 12px;
+  }
 }

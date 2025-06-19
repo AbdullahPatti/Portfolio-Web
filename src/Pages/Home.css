@@ -1,8 +1,7 @@
 .intro-section {
-  padding: 10px 40px;
+  padding: 10px 40px 50px 40px;
   margin-top: 0;
   text-align: center;
-  padding-bottom: 50px;
 }
 
 .headline {
@@ -109,6 +108,7 @@
   background-color: #000000;
 }
 
+/* 📱 Responsive Styles */
 @media (max-width: 768px) {
   .intro-content {
     flex-direction: column;
@@ -119,11 +119,40 @@
 
   .bio {
     max-width: 90%;
-    margin-top: 10px;
+    padding: 30px;
+    font-size: 14px;
+    padding-bottom: 30px;
   }
 
   .ppm {
     max-width: 70%;
     margin-top: 20px;
+  }
+
+  .subheading {
+    font-size: 40px;
+  }
+
+  .headline {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subheading {
+    font-size: 34px;
+  }
+
+  .headline {
+    font-size: 20px;
+  }
+
+  .cv-button {
+    font-size: 13px;
+    padding: 7px 16px 9px 18px;
+  }
+
+  .ppm {
+    max-width: 85%;
   }
 }

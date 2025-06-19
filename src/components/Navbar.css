@@ -7,6 +7,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
+  flex-wrap: wrap;
 }
 
 .navbar-logo {
@@ -23,7 +24,6 @@
 }
 
 .logo-link:hover {
-  text-decoration: none;
   color: rgb(174, 224, 249);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
@@ -34,6 +34,8 @@
   list-style: none;
   padding: 0;
   font-size: 15px;
+  margin-right: 20px;
+  flex-wrap: wrap;
 }
 
 .navbar-menu a {
@@ -42,10 +44,48 @@
   font-family: 'Quicksand', sans-serif;
   font-size: large;
   text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.4);
+  transition: color 0.3s ease;
 }
 
 .navbar-menu a:hover {
   text-decoration: dotted;
   font-weight: 1000;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  color: #dbeafe;
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  .navbar-logo {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .navbar-menu a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-link {
+    font-size: 32px;
+  }
+
+  .navbar-menu a {
+    font-size: 15px;
+  }
 }

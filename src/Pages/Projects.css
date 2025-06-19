@@ -22,6 +22,8 @@
   border-radius: 25px;
   max-width: 1400px;
   text-align: center;
+  font-size: 17px;
+  line-height: 1.6;
 }
 
 .main_projects {
@@ -41,6 +43,10 @@
   max-width: 750px;
   padding: 20px;
   text-align: center;
+  color: whitesmoke;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
 }
 
 .certify {
@@ -55,29 +61,94 @@
   max-width: 750px;
   text-align: center;
   color: whitesmoke;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
 }
 
 .tedecs {
   color: whitesmoke;
   list-style: none;
   padding-left: 0;
+  margin-top: 10px;
 }
 
 .id1, .cid1 {
   font-family: 'Quicksand', sans-serif;
   font-size: large;
-  text-shadow: 0;
   font-weight: bold;
   margin-top: 10px;
+  color: whitesmoke;
 }
 
 .id2, .cid2 {
   font-size: medium;
   margin-bottom: 10px;
   font-family: 'Quicksand', sans-serif;
+  color: #d9eefe;
 }
 
 .ids {
   margin-top: 10px;
   padding-top: 10px;
+}
+
+/* ✅ Mobile & Tablet Responsiveness — Only Additions Below */
+@media (max-width: 1024px) {
+  .paragraph {
+    padding: 18px;
+    font-size: 16px;
+  }
+
+  .explanation,
+  .certify_exp {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .project_heading,
+  .main_projects {
+    font-size: 34px;
+  }
+
+  .paragraph {
+    padding: 16px;
+    font-size: 15.5px;
+  }
+
+  .id1, .cid1 {
+    font-size: 17px;
+  }
+
+  .id2, .cid2 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project_heading,
+  .main_projects {
+    font-size: 30px;
+  }
+
+  .paragraph {
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  .explanation,
+  .certify_exp {
+    padding: 15px;
+    font-size: 14.5px;
+    border-radius: 25px;
+  }
+
+  .id1, .cid1 {
+    font-size: 16px;
+  }
+
+  .id2, .cid2 {
+    font-size: 14px;
+  }
 }
