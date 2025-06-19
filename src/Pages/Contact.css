@@ -1,0 +1,52 @@
+.contact {
+  background-color: rgb(252, 194, 234);
+  padding: 60px 20px;
+}
+
+.contact_header {
+  font-weight: bold;
+  font-family: "Cal Sans", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.lines {
+  padding: 20px;
+  margin: 0 auto 40px auto;
+  font-family: 'Quicksand', sans-serif;
+  background-color: whitesmoke;
+  border-radius: 25px;
+  max-width: 1400px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.email {
+  text-align: center;
+  font-family: "Cal Sans", sans-serif;
+  font-size: 26px;
+  margin-bottom: 8px;
+  margin-top: 30px;
+}
+
+.etype-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* reduced from 10px 0 to 0 */
+  margin-bottom: 10px;
+}
+
+.etype {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  background-color: whitesmoke;
+  padding: 8px 16px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 17px;
+  margin: 0; /* Remove extra spacing */
+}

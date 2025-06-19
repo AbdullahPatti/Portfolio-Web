@@ -16,10 +16,12 @@
 
 .paragraph {
   padding: 20px;
-  margin: 20px;
+  margin: 20px auto;
   font-family: 'Quicksand', sans-serif;
   background-color: whitesmoke;
   border-radius: 25px;
+  max-width: 1400px;
+  text-align: center;
 }
 
 .main_projects {
@@ -32,56 +34,50 @@
   padding: 8px 20px;
 }
 
-.explanation{
-    background-color: #003049;
-    border-radius: 50px;
-    margin: auto;
-    max-width: 750px;
+.explanation {
+  background-color: #003049;
+  border-radius: 50px;
+  margin: 20px auto;
+  max-width: 750px;
+  padding: 20px;
+  text-align: center;
 }
 
-.tedecs{
-    color: whitesmoke;
-    text-align: center;
-    list-style-type: square;
-    list-style-position:outside;
+.certify {
+  margin-top: 40px;
 }
 
-.id1{
-font-size: large;
-font-weight: bold;
-list-style-type: none;
-align-items: center;
-justify-content: center;
+.certify_exp {
+  background-color: #003049;
+  border-radius: 25px;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 750px;
+  text-align: center;
+  color: whitesmoke;
 }
 
-.ids{
-margin-top: 10px;
-padding-top: 20px;
+.tedecs {
+  color: whitesmoke;
+  list-style: none;
+  padding-left: 0;
 }
 
-.id2{
-list-style-type: none;
+.id1, .cid1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: large;
+  text-shadow: 0;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
-/* .certify{
-    align-items: center;
-    justify-items: center;
-    align-items: center;
-} */
-
-.certify_exp{
-     align-items: center;
-    justify-items: center;
+.id2, .cid2 {
+  font-size: medium;
+  margin-bottom: 10px;
+  font-family: 'Quicksand', sans-serif;
 }
 
-.cid1{
-font-size: large;
-font-weight: bold;
-list-style-type: none;
-align-items: center;
-justify-content: center;
-}
-
-.cid2{
-list-style-type: none;
+.ids {
+  margin-top: 10px;
+  padding-top: 10px;
 }
