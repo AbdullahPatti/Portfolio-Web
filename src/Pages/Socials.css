@@ -1,0 +1,68 @@
+.socials-section {
+  background: linear-gradient(to right, #e0f7ff, #d0e7ff);
+  padding: 60px 20px;
+  text-align: center;
+  color: #003366;
+}
+
+.socials-heading {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #00264d;
+  font-family: 'Cal Sans', sans-serif;
+}
+
+.socials-intro {
+    padding: 20px;
+  margin: 20px auto;
+  font-family: 'Quicksand', sans-serif;
+  background-color: whitesmoke;
+  border-radius: 25px;
+  max-width: 1400px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.socials-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.socials-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #0059b3;
+  background-color: #f0f8ff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 80, 160, 0.1);
+
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+.socials-icons a:hover {
+  background-color: #cce6ff;
+  transform: translateY(-3px);
+}
+
+.socials-icons img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+

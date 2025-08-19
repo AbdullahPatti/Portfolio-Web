@@ -1,0 +1,99 @@
+.abouts {
+  background: linear-gradient(to right, #d9f8f3, #bdf4ec);
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+.skillset {
+  font-family: "Cal Sans", sans-serif;
+  font-size: 48px;
+  color: #003049;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.skillsOutline {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #004e5b;
+  font-size: 17px;
+  line-height: 1.7;
+  padding: 30px 40px;
+  text-align: justify;
+  font-family: 'Quicksand', sans-serif;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.head {
+  display: inline-block;
+  padding: 8px 20px;
+  text-align: center;
+  font-family: "Cal Sans", sans-serif;
+  font-size: 24px;
+  color: #003049;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  background-color: aliceblue;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.tedec {
+  font-family: 'Quicksand', sans-serif;
+  list-style-type: square;
+  color: #026873;
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  padding-left: 30px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* 📱 Small Devices */
+@media (max-width: 768px) {
+  .skillset {
+    font-size: 36px;
+  }
+
+  .skillsOutline {
+    font-size: 15.5px;
+    padding: 20px 18px;
+    border-radius: 12px;
+  }
+
+  .head {
+    font-size: 20px;
+    padding: 6px 15px;
+    margin-top: 40px;
+  }
+
+  .tedec {
+    font-size: 16px;
+    padding-left: 20px;
+  }
+}
+
+/* 📲 Very Small Devices */
+@media (max-width: 480px) {
+  .skillset {
+    font-size: 30px;
+  }
+
+  .skillsOutline {
+    font-size: 15px;
+    padding: 18px 15px;
+  }
+
+  .head {
+    font-size: 18px;
+  }
+
+  .tedec {
+    font-size: 15px;
+    padding-left: 16px;
+  }
+}
