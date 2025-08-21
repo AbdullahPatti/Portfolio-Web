@@ -1,90 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cal-sans');
+
 .contact {
-  background-color: rgb(254, 226, 245);
-  padding: 60px 20px 50px 20px;
+  background: linear-gradient(to right, #d1fafc, #d1fafc);
+  padding: 70px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.spacer {
+  height: 80px;
+  margin-top: -70px;
+}
+
+.mainstream {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .contact_header {
-  font-weight: bold;
-  font-family: "Cal Sans", sans-serif;
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 30px;
+  font-family: 'Cal Sans', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #4a044e;
+  margin: 10px 0 20px;
+  letter-spacing: 0.5px;
 }
 
 .lines {
   padding: 20px;
-  margin: 0 auto 40px auto;
+  margin: 20px auto;
   font-family: 'Quicksand', sans-serif;
-  background-color: whitesmoke;
-  border-radius: 25px;
-  max-width: 1400px;
+  background-color: #fff5f8;
+  border-radius: 20px;
+  max-width: 1200px;
   text-align: center;
   font-size: 18px;
-  line-height: 1.6;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  line-height: 1.7;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lines:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.contact-details {
+  margin-top: 30px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for one contact item per row */
+  gap: 15px;
+}
+
+.contact-card {
+  background: #fff5f8;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .email {
-  text-align: center;
-  font-family: "Cal Sans", sans-serif;
-  font-size: 26px;
-  margin-bottom: 8px;
-  margin-top: 30px;
+  font-family: 'Cal Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #4a044e;
+  margin: 5px 0;
 }
 
 .etype-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
+  position: relative;
 }
 
 .etype {
   font-family: 'Quicksand', sans-serif;
-  text-align: center;
-  background-color: whitesmoke;
+  font-size: 16px;
+  color: #6b7280;
+  margin: 5px 0;
   padding: 8px 16px;
-  display: inline-block;
-  border: 2px solid #ccc;
+  background-color: #ffffff;
+  border: 2px solid #e5e7eb;
   border-radius: 10px;
-  font-size: 17px;
-  margin: 0;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
 }
 
-/* 📱 Responsive Adjustments */
-@media (max-width: 768px) {
-  .contact_header {
-    font-size: 32px;
+.etype:hover {
+  border-color: #db2777;
+}
+
+.etype-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.etype-link:hover .etype {
+  border-color: #db2777;
+}
+
+.copy-tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4a044e;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: 'Quicksand', sans-serif;
+  opacity: 0;
+  animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translate(-50%, -10px); }
+  20% { opacity: 1; transform: translate(-50%, 0); }
+  80% { opacity: 1; transform: translate(-50%, 0); }
+  100% { opacity: 0; transform: translate(-50%, -10px); }
+}
+
+/* Responsive Design */
+
+/* iPad Pro (1024px) and larger tablets */
+@media (max-width: 1024px) {
+  .contact {
+    padding: 60px 20px;
   }
 
-  .lines {
-    font-size: 16px;
-    padding: 15px;
+  .contact_header {
+    font-size: 36px;
+  }
+
+  .lines,
+  .contact-details {
+    max-width: 90%;
+  }
+
+  .contact-card {
+    width: 70%;
+    max-width: 450px;
   }
 
   .email {
     font-size: 22px;
-    margin-top: 20px;
   }
 
   .etype {
-    font-size: 16px;
+    font-size: 15px;
     padding: 6px 14px;
   }
 }
 
-@media (max-width: 480px) {
-  .contact {
-    padding: 40px 15px 40px 15px;
-  }
-
+/* iPad Air (820px) and similar tablets */
+@media (max-width: 820px) {
   .contact_header {
-    font-size: 28px;
+    font-size: 34px;
   }
 
   .lines {
-    font-size: 15px;
-    padding: 12px;
+    font-size: 16px;
+    padding: 16px;
+  }
+
+  .contact-card {
+    width: 80%;
+    max-width: 400px;
   }
 
   .email {
@@ -92,7 +199,81 @@
   }
 
   .etype {
+    font-size: 14px;
+  }
+}
+
+/* iPhone 15 Pro Max (430px), Galaxy S23/S24 Ultra (412px), iPhone 14/14 Pro (390-393px) */
+@media (max-width: 430px) {
+  .contact {
+    padding: 50px 15px;
+  }
+
+  .contact_header {
+    font-size: 32px;
+    padding: 8px 15px;
+  }
+
+  .lines {
     font-size: 15px;
+    padding: 14px;
+    max-width: 95%;
+  }
+
+  .contact-card {
+    width: 90%;
+    max-width: 320px;
+    padding: 12px;
+  }
+
+  .email {
+    font-size: 18px;
+  }
+
+  .etype {
+    font-size: 13px;
     padding: 6px 12px;
+  }
+
+  .copy-tooltip {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+}
+
+/* Smaller mobiles (e.g., older iPhones, smaller Android devices) */
+@media (max-width: 360px) {
+  .contact {
+    padding: 40px 10px;
+  }
+
+  .contact_header {
+    font-size: 28px;
+    padding: 8px 10px;
+  }
+
+  .lines {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .contact-card {
+    width: 95%;
+    max-width: 300px;
+    padding: 10px;
+  }
+
+  .email {
+    font-size: 16px;
+  }
+
+  .etype {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .copy-tooltip {
+    font-size: 10px;
+    padding: 3px 6px;
   }
 }

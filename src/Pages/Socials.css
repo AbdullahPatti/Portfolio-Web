@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cal-sans');
+
+/* Section Base */
 .socials-section {
   background: linear-gradient(to right, #e0f7ff, #d0e7ff);
   padding: 60px 20px;
   text-align: center;
   color: #003366;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
+/* Heading */
 .socials-heading {
   font-size: 50px;
   font-weight: bold;
@@ -13,46 +20,53 @@
   font-family: 'Cal Sans', sans-serif;
 }
 
+/* Intro Paragraph */
 .socials-intro {
-    padding: 20px;
-  margin: 20px auto;
+  padding: 20px;
+  margin: 20px auto 40px;
   font-family: 'Quicksand', sans-serif;
   background-color: whitesmoke;
   border-radius: 25px;
-  max-width: 1400px;
-  text-align: center;
-  margin-bottom: 40px;
+  max-width: 1200px;
+  font-size: 17px;
+  line-height: 1.6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.socials-intro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Social Links Layout */
 .socials-icons {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-
+/* Each Link */
 .socials-icons a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
   text-decoration: none;
   font-size: 18px;
+  font-weight: 600;
   color: #0059b3;
   background-color: #f0f8ff;
-  padding: 12px 24px;
-  border-radius: 10px;
+  padding: 14px 24px;
+  border-radius: 12px;
   transition: all 0.3s ease;
   box-shadow: 0 2px 8px rgba(0, 80, 160, 0.1);
-
+  width: 80%;
   max-width: 500px;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
 }
-
-
 
 .socials-icons a:hover {
   background-color: #cce6ff;
@@ -60,9 +74,112 @@
 }
 
 .socials-icons img {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   object-fit: contain;
 }
 
+/* ========== Responsive Styles ========== */
 
+/* Laptops / large tablets */
+@media (max-width: 1024px) {
+  .socials-heading {
+    font-size: 45px;
+  }
+
+  .socials-intro {
+    max-width: 90%;
+    font-size: 16px;
+    padding: 18px;
+  }
+
+  .socials-icons a {
+    width: 75%;
+    font-size: 17px;
+    padding: 12px 20px;
+  }
+
+  .socials-icons img {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+/* Tablets + mid-sized phones */
+@media (max-width: 768px) {
+  .socials-section {
+    padding: 50px 15px;
+  }
+
+  .socials-heading {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .socials-intro {
+    font-size: 15px;
+    padding: 16px;
+  }
+
+  .socials-icons a {
+    width: 85%;
+    font-size: 16px;
+    padding: 12px 18px;
+  }
+
+  .socials-icons img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* iPhone 14/14 Pro (390–393px), Galaxy S23/S24 Ultra (412px), iPhone 15 Pro Max (430px) */
+@media (max-width: 430px) {
+  .socials-section {
+    padding: 40px 12px;
+  }
+
+  .socials-heading {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  .socials-intro {
+    font-size: 14px;
+    padding: 14px;
+  }
+
+  .socials-icons a {
+    width: 95%;
+    font-size: 15px;
+    padding: 10px 16px;
+  }
+
+  .socials-icons img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Very small devices (<= 360px) */
+@media (max-width: 360px) {
+  .socials-heading {
+    font-size: 28px;
+  }
+
+  .socials-intro {
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  .socials-icons a {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  .socials-icons img {
+    width: 22px;
+    height: 22px;
+  }
+}

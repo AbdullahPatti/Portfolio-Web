@@ -9,7 +9,7 @@ function Socials() {
       </p>
 
       <div className="socials-icons">
-        <a href="https://www.instagram.com/abdullaharoon._/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/_abdullaharoon/" target="_blank" rel="noopener noreferrer">
           <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" />
           Instagram
         </a>

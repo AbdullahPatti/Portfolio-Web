@@ -4,9 +4,10 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <a href="/" className="logo-link">Abdullah.</a>
+        <a href="#home" className="logo-link">Abdullah.</a>
       </div>
       <ul className="navbar-menu">
+        <li><a href="#qualification">Qualifications</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Accomplishments</a></li>
         <li><a href="#socials">Socials</a></li>
