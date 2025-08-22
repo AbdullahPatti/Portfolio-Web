@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/cal-sans');
-
+ 
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -11,10 +11,12 @@
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  flex-wrap: nowrap;
 }
 
 .navbar-logo {
   margin-left: 20px;
+  white-space: nowrap;
 }
 
 .logo-link {
@@ -38,6 +40,9 @@
   padding: 0;
   margin-right: 20px;
   font-family: 'Quicksand', sans-serif;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
 .navbar-menu a {
@@ -53,9 +58,7 @@
   transform: translateY(-2px);
 }
 
-/* Responsive Design */
-
-/* Larger screens (desktops, tablets > 1024px) */
+/* Responsive font sizing */
 @media (max-width: 1024px) {
   .navbar {
     padding: 12px 20px;
@@ -75,40 +78,38 @@
   }
 }
 
-/* Tablets and larger mobiles (e.g., iPad, Galaxy Tab) */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
     padding: 10px 15px;
   }
 
   .navbar-logo {
     margin-left: 0;
-    margin-bottom: 10px;
   }
 
   .navbar-menu {
-    flex-direction: column;
-    align-items: flex-start;
     gap: 15px;
-    margin-right: 0;
-    width: 100%;
   }
 
   .navbar-menu a {
     font-size: 16px;
-    padding: 8px 0;
   }
 }
 
-/* iPhone 15 Pro Max (430px), Galaxy S23 Ultra (412px), iPhone 14/14 Pro (390-393px) */
 @media (max-width: 430px) {
   .navbar {
     padding: 10px 10px;
   }
 
   .logo-link {
-    font-size: 36px;
+    font-size: 32px;
+  }
+
+  .navbar-menu {
+    gap: 10px;
+  }
+
+  .navbar-menu a {
+    font-size: 14px;
   }
 }

@@ -22,7 +22,7 @@ function Home() {
 
         <div className="ppm-container">
           <div className="ppm-image-wrapper">
-            <img src="pattipromax.jpg" alt="No Image here" className="ppm" />
+            <img src="patti.jpg" alt="No Image here" className="ppm" />
             <a
               href="https://linktr.ee/abdullahpatti?utm_source=linktree_profile_share&ltsid=f18c952d-332f-4d07-a1d2-110b51c2f023"
               target="_blank"

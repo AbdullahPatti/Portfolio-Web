@@ -26,8 +26,8 @@ function Socials() {
           Facebook
         </a>
         <a href="https://x.com/Abdullah1Haroon" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X (Twitter)" />
-          X (Twitter)
+          <img src="X.png" alt="X (Twitter)" />
+          X 
         </a>
         <a href="https://www.tiktok.com/@abdullahpattipromax" target="_blank" rel="noopener noreferrer">
           <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" />
